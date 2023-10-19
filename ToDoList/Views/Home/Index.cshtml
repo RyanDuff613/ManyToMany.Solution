@@ -1,0 +1,38 @@
+@{
+  Layout = "_Layout";
+}
+
+@using ToDoList.Models;
+
+<h1>Welcome to the To Do List!</h1>
+
+<hr>
+
+<h4>Tags</h4>
+@if (Model["tags"].Length == 0)
+{
+  <p>No tags have been added yet!</p>
+}
+<ul>
+  @foreach (Tag tag in Model["tags"])
+  {
+    <li>@Html.ActionLink(@tag.Title, "Details", "Tags", new { id = @tag.TagId })</li>
+  }
+</ul>
+
+<h4>Items</h4>
+@if (Model["items"].Length == 0)
+{
+  <p>No items have been added yet!</p>
+}
+<ul>
+  @foreach (Item item in Model["items"])
+  {
+    <li>@Html.ActionLink(@item.Description, "Details", "Items", new { id = @item.ItemId })</li>
+  }
+</ul>
+
+<hr>
+
+<p>@Html.ActionLink("Manage items", "Index", "Items")</p>
+<p>@Html.ActionLink("Manage tags", "Index", "Tags")</p>
