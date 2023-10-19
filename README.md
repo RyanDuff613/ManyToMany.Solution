@@ -3,7 +3,7 @@
 #### By: Ryan Duff
 
 ## Description
-A Todo List Application created with ASP.NET Core MVC. 
+A Todo List Application created with ASP.NET Core MVC. An example project for creating a Many-to-Many Relationship in an Asp.Net Core MVC with Entity. Checkout the project roadmap in Notes.md!
 
 ## Technologies Used
 - C#
