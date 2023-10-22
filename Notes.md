@@ -330,7 +330,7 @@
     </details>
 
   - A new controller route handles the Post request from the form.  
-    <details><summary><code>ToDoList/Views/Create.cshtml</code></summary> 
+    <details><summary><code>ToDoList/Controllers/ItemsController.cs</code></summary> 
 
       ```c#
         [HttpPost]
